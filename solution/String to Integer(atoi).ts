@@ -12,7 +12,7 @@ function myAtoi(s: string): number {
   const INT_32_BIT_MIN = -2147483648;
   let num = 0;
   for (let i = 0; i < s.length; i++) {
-    /* handing whitespace. all these comments with handling blah blah are not necessary. But I feel a little organized somehow. Weired :) */
+    /* handing whitespace. all these comments with handling blah blah are not necessary. But I feel a little organized somehow. weird :) */
     const isWhiteSpace = s[i] === " "
     if (isLeading && isWhiteSpace) continue; // go to next loop
     else if(!isLeading && isWhiteSpace) break;
